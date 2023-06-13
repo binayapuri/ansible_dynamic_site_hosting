@@ -1,0 +1,10 @@
+- name: Delete files
+  file:
+    path: /var/www/html/
+    state: absent
+
+- name: restart Apache
+  service:
+    name: apache2
+    enabled: yes
+    state: restarted

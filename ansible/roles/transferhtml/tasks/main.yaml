@@ -1,0 +1,7 @@
+- name: Copy HTML file
+  copy:
+    src: /Users/Adex/express_todo/
+    dest: /var/www/html/
+
+
+-

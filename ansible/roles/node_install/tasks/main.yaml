@@ -1,0 +1,19 @@
+- name: Install Node.js
+  become: true
+  apt:
+    name: nodejs
+    state: present
+
+- name: Install npm
+  become: true
+  apt:
+    name: npm
+    state: present
+
+# - name: Install server dependencies
+#   command: npm install
+ 
+
+# - name: Start the Express server
+#   command: node server.js
+  

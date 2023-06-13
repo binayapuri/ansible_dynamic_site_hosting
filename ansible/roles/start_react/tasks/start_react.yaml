@@ -1,0 +1,6 @@
+# - name: Install server dependencies
+#   command: npm i
+ 
+
+# - name: Start the Express server
+#   command: node server.js

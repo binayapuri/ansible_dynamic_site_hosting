@@ -1,0 +1,18 @@
+---
+- hosts: bp_groups
+  become: true
+  roles:
+    - apache
+    - delete_html_files
+    # - transferhtml
+    - node_install
+    # - start_react
+    - git_repo
+    # - start_react
+    # - php
+    # - mysql 
+  
+  # default ma binayapuri gayara yo rakeko
+  vars:
+    ansible_user: ubuntu
+

@@ -1,0 +1,14 @@
+plugin: amazon.aws.aws_ec2
+aws_profile: default
+regions:
+   - us-east-1
+hostnames:
+  - ip-address
+  #- private-ip-address
+groups:
+  # ec21: "'bp_ec21' in tags.Name"
+  # ec22: "'bp_ec22' in tags.Name"
+  # ec23: "'bp_ec23' in tags.Name"
+  bp_groups: "'ubuntu' in tags.OS"
+# compose:
+#   ansible_user: ubuntu
